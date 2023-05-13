@@ -1,7 +1,6 @@
 
 import com.entidade.Calculadora;
 import com.fasterxml.jackson.core.JsonProcessingException;
-
 import javax.swing.JOptionPane;
 
 /**
@@ -15,7 +14,6 @@ public class Principal {
         //Instância a calculadora
         Calculadora calculadora = new Calculadora();
 
-        // Chamando os métodos remotos
         String opcao = "";
         double valorA = 0;
         double valorB = 0;
