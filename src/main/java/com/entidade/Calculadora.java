@@ -13,7 +13,7 @@ import javax.ws.rs.core.Response;
  */
 public class Calculadora {
     
-    public double getAdicao(double a, double b) throws JsonProcessingException {
+    public double getSoma(double a, double b) throws JsonProcessingException {
         //Variável de retorno
         double resultado = 0;
 
@@ -49,7 +49,7 @@ public class Calculadora {
         return resultado;
     }
 
-    public double getSubtracao(double a, double b) throws JsonProcessingException {
+    public double getDiferenca(double a, double b) throws JsonProcessingException {
         //Variável de retorno
         double resultado = 0;
 
@@ -89,7 +89,7 @@ public class Calculadora {
         double resultado = 0;
 
         //Url do serviço
-        String url = "http://localhost:8080/webservice_calculadora_jaxrs_rest/rest/calculadora/produto/" + a + "/" + b;
+        String url = "http://localhost:8080/webservice_calculadora_jaxrs_rest/rest/calculadora/multiplicacao/" + a + "/" + b;
 
         //Criar instância do cliente JAX-RS
         Client clienteJAXRS = ClientBuilder.newClient();
@@ -120,7 +120,7 @@ public class Calculadora {
         return resultado;
     }
 
-    public double getDivisao(double a, double b) throws JsonProcessingException {
+    public double getQuociente(double a, double b) throws JsonProcessingException {
         //Variável de retorno
         double resultado = 0;
 
